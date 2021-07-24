@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Flex, Heading, Stack } from "@chakra-ui/react";
+import { Form } from "./components/Form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      height="100vh"
+      width="100vw"
+      bgGradient="linear(to-r, green.200, pink.500)"
+    >
+      <Stack maxW="container.sm" spacing="8">
+        <Heading textAlign="center" color="white">
+          Tray.io tech test!
+        </Heading>
+        <Form />
+      </Stack>
+    </Flex>
   );
 }
 
